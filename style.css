@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #000;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  align-items: center;
+
+  
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto; 
+
+}
+.search-box {
+  display: flex;
+  margin: 20px ;
+}
+
+.search-box input {
+  flex: 5;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgb(232, 233, 240);
+  background-color: darkgreen;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  display: none;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+.card img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.repos {
+  margin-top: 20px;
+}
+
+.repo {
+  background: #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+body.dark .repo {
+  background: #2a2a2a;
+}
+
+#errorMsg {
+  color: red;
+  margin-bottom: 10px;
+}
